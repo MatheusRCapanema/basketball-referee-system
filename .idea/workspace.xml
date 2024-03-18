@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dcde3e0-880f-493b-aeaf-76541626d611" name="Changes" comment="Commit inicial do projeto" />
+    <list default="true" id="0dcde3e0-880f-493b-aeaf-76541626d611" name="Changes" comment="Manutenções">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710707510179</updated>
       <workItem from="1710707512684" duration="10909000" />
-      <workItem from="1710791057191" duration="317000" />
+      <workItem from="1710791057191" duration="443000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inicial do projeto">
       <option name="closed" value="true" />
@@ -111,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710791228122</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Manutenções">
+      <option name="closed" value="true" />
+      <created>1710791465065</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710791465065</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +140,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit inicial do projeto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit inicial do projeto" />
+    <MESSAGE value="Manutenções" />
+    <option name="LAST_COMMIT_MESSAGE" value="Manutenções" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/basketball_referee_system$Run.coverage" NAME="Run Coverage Results" MODIFIED="1710722496477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
