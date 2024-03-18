@@ -1,0 +1,90 @@
+swagger: '2.0'
+info:
+  title: Basketball Referee System API
+  version: 1.0.0
+schemes:
+  - http
+tags:
+  - name: Time
+    description: Endpoint relacionado ao controle de tempo da partida
+paths:
+  /time-management:
+    get:
+      tags:
+        - Time
+      summary: "Obtém o estado atual do relógio do jogo"
+      description: "Retorna se o relógio está rodando e o tempo atual de jogo."
+      responses:
+        200:
+          description: "Estado do relógio retornado com sucesso"
+          schema:
+            type: object
+            properties:
+              running:
+                type: boolean
+                description: "Indica se o relógio do jogo está rodando."
+              time:
+                type: string
+                description: "Mostra o tempo atual de jogo no formato HH:MM."
+    post:
+      tags:
+        - Time
+      summary: "Controla ações do relógio de jogo"
+      description: "Permite iniciar, parar ou configurar o relógio do jogo. Para configurar o tempo, forneça 'minutes' e 'seconds'."
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: "Dados de ação para o relógio de jogo."
+          required: true
+          schema:
+            type: object
+            required:
+              - action
+            properties:
+              action:
+                type: string
+                enum: [start, stop, set]
+                description: "A ação a ser realizada no relógio do jogo."
+              minutes:
+                type: integer
+                description: "Minutos para configurar o relógio, necessário apenas para a ação 'set'."
+              seconds:
+                type: integer
+                description: "Segundos para configurar o relógio, necessário apenas para a ação 'set'."
+      responses:
+        200:
+          description: "Ação realizada com sucesso."
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                description: "Mensagem de resposta sobre a ação realizada."
+              dados:
+                type: object
+                properties:
+                  action:
+                    type: string
+                  time:
+                    type: string
+
+  /tempo-decorrido:
+    get:
+      tags:
+        - Time
+      summary: "Obtém o estado atual do relógio do jogo"
+      description: "Retorna se o relógio está rodando e o tempo atual de jogo."
+      responses:
+        200:
+          description: "Estado do relógio retornado com sucesso"
+          schema:
+            type: object
+            properties:
+              running:
+                type: boolean
+                description: "Indica se o relógio do jogo está rodando."
+              time:
+                type: string
+                description: "Mostra o tempo atual de jogo no formato HH:MM."
